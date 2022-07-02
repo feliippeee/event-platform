@@ -13,6 +13,7 @@ export function Sidebar() {
                 {data?.lessons.map(lesson => {
                     return (
                         <Lesson 
+                            
                             key={lesson.id}
                             title={lesson.title}
                             slug={lesson.slug}

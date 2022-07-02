@@ -27,7 +27,7 @@ export function Lesson(props: LessonProps) {
             <div className={`rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500 ${isActive ? 'bg-green-500' : ''}`}>
                 <header className="flex items-center justify-between">
                     {isLessonAvailable ? (
-                        <span className={`tetext-sm font-medium flex items-center gap-2 ${isActive ? 'text-white' : 'text-blue-500'}`}>
+                        <span className={`text-sm font-medium flex items-center gap-2 ${isActive ? 'text-white' : 'text-blue-500'}`}>
                         <CheckCircle size={20} />
                         Conteúdo liberado
                     </span>
