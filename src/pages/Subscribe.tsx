@@ -38,7 +38,7 @@ export function Subscribe() {
             <div className="w-full md:max-w-[1100px] flex flex-col md:flex-row items-center justify-center md:justify-between gap-x-201 md:px-2 mx-auto">
                 <div className="mt-10 max-w-[640px] flex flex-col items-center mb-6 md:items-start">
                     <Logo />
-                    <h1 className="mt-6 md:mt-8 text-3xl md:text-[2.5rem] mx-6 md:mx-0 leading-tight text-center md:text-left">
+                    <h1 className="mt-6 md:mt-8 text-3xl md:text-[2.5rem] mx-7 md:mx-0 leading-tight text-center md:text-left">
                         Construa uma {' '}
                         <strong className="text-blue-500 flex-col md:flex-none"> 
                         aplicação completa,{' '}
