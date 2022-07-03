@@ -33,14 +33,14 @@ export function Subscribe() {
         <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
             <img 
                 className="absolute -z-10"
-                src={imgReact} alt="" 
+                src={imgReact} alt="Marca d'àgua React JS - Biblioteca" 
             />
-            <div className="w-full max-w-[1100px] flex flex-col md:flex-row items-center justify-center md:justify-between gap-x-201 mt-20 mx-auto">
-                <div className="max-w-[640px] flex flex-col items-center mb-6 md:items-start">
+            <div className="w-full md:max-w-[1100px] flex flex-col md:flex-row items-center justify-center md:justify-between gap-x-201 md:px-2 mx-auto">
+                <div className="mt-10 max-w-[640px] flex flex-col items-center mb-6 md:items-start">
                     <Logo />
-                    <h1 className="mt-8 md:mt-6 text-3xl md:text-[2.5rem] leading-tight text-center md:text-left">
+                    <h1 className="mt-6 md:mt-8 text-3xl md:text-[2.5rem] mx-6 md:mx-0 leading-tight text-center md:text-left">
                         Construa uma {' '}
-                        <strong className="text-blue-500 flex-col md:flex-none"> {/*corrigir quebrando layout no pc*/}
+                        <strong className="text-blue-500 flex-col md:flex-none"> 
                         aplicação completa,{' '}
                         </strong>
                         do zero, com {' '}
@@ -48,12 +48,12 @@ export function Subscribe() {
                             React JS
                         </strong> 
                     </h1>
-                    <p className="text-base md:pr-[1.5rem] text-center md:text-left mt-4 text-gray-200 leading-relaxed">
+                    <p className="text-base px-4 md:px-0 md:pr-[1.5rem] text-center md:text-left mt-4 text-gray-200 leading-relaxed">
                         Em apenas uma semana você vai dominar na prática uma das tecnologias mais utilizadas e com alta demanda para acessar as melhores oportunidades do mercado.
                     </p>
                 </div>
 
-                <div className="p-8 bg-gray-700 border border-gray-500 rounded">
+                <div className="w-full md:w-auto p-8 bg-gray-700 border border-gray-500 rounded">
                     <strong className="text-lg md:text-2xl mb-6 block">Inscreva-se gratuitamente</strong>
 
                     <form onSubmit={handleSubscribe} className="flex flex-col gap-2 w-full">
@@ -80,8 +80,8 @@ export function Subscribe() {
                     </form>
                 </div>
             </div>
-            {window.screen.width < 768 ? <img src={imgUrlMobile} className="mt-10 ml-6 object-contain mb-1" alt="" /> : <img src={imgUrl} className="mt-10" alt="" /> }
-            
+            <img className="mt-4 md:mt-10 -mb-4" alt="" src={window.screen.width > 768 ? imgUrl : imgUrlMobile} />  
+            {/*<img className="mt-4 md:mt-10 -mb-4" alt="" src={imgUrl} />*/}
             <Footer />
         </div> 
     )

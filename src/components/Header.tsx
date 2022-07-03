@@ -15,7 +15,7 @@ export function Header({width, height, setIsOpen, isOpen}: HeaderProps) {
             <div className='flex items-center gap-2 md:hidden'>
                 <span className='text-sm text-gray-100'>Aulas</span>
                 <button onClick={() => setIsOpen(!isOpen)}>
-                {isOpen ? <X size={32} /> : <List size={32} />}
+                {isOpen ? <X size={32} color={'rgba(129, 216, 247, 1)'} /> : <List size={32} color={'rgba(129, 216, 247, 1)'} />}
                 </button>
             </div>
         </header>
